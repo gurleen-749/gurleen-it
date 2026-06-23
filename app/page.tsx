@@ -763,24 +763,32 @@ const startDrag = (
       style={{ zIndex: 100 + index }}
       className="fixed inset-0 pointer-events-none"
     >
+      
       <div
-  style={{
-    left: window.x,
-    top: window.y,
-  }}
+  style={
+    globalThis.window.innerWidth < 768
+      ? {}
+      : {
+          left: window.x,
+          top: window.y,
+        }
+  }
   onMouseDown={() => bringToFront(index)}
   className="
-    absolute
-    w-[700px]
-    h-[520px]
+  absolute
+  w-[700px]
+  h-[520px]
 
-    max-md:w-[92vw]
-    max-md:h-[75vh]
+  max-md:w-[92vw]
+  max-md:h-[75vh]
 
-    max-md:left-1/2
-    max-md:top-1/2
-    max-md:-translate-x-1/2
-    max-md:-translate-y-1/2
+  left-[500px]
+  top-[120px]
+
+  max-md:left-1/2
+  max-md:top-1/2
+  max-md:-translate-x-1/2
+  max-md:-translate-y-1/2
 
     bg-[#f7f7f7]
     rounded-[13px]
@@ -1244,20 +1252,33 @@ if (window.id === "bin") {
       className="fixed inset-0 pointer-events-none"
     >
       <div
-        style={{
+  style={
+    globalThis.window.innerWidth < 768
+      ? {}
+      : {
           left: window.x,
           top: window.y,
-        }}
+        }
+  }
         className="
-          absolute
-          w-[700px]
-          h-[520px]
-          bg-[#f8f8f8]
-          rounded-[13px]
-          overflow-hidden
-          shadow-xl
-          pointer-events-auto
-        "
+  absolute
+  w-[700px]
+  h-[520px]
+
+  max-md:w-[92vw]
+  max-md:h-[75vh]
+
+  max-md:left-1/2
+  max-md:top-1/2
+  max-md:-translate-x-1/2
+  max-md:-translate-y-1/2
+
+  bg-[#f8f8f8]
+  rounded-[13px]
+  overflow-hidden
+  shadow-xl
+  pointer-events-auto
+"
       >
         {/* HEADER */}
         <div
