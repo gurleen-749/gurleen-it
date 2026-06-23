@@ -485,6 +485,8 @@ const startDrag = (
 };
 
   const openWindow = (id: string) => {
+  const isMobile = window.innerWidth < 768;
+
   const positions = {
     indesign: { x: 610, y: 213 },
     photoshop: { x: 580, y: 265 },
@@ -494,26 +496,28 @@ const startDrag = (
     photos: { x: 500, y: 120 },
     bin: { x: 600, y: 180 },
 
-      "brand-identity": { x: 380, y: 90 },
-  packaging: { x: 470, y: 130 },
-  editorial: { x: 560, y: 80 },
-  campaign: { x: 650, y: 140 },
-  typography: { x: 420, y: 200 },
-  fashion: { x: 340, y: 260 },
-  identity: { x: 530, y: 220 },
-  print: { x: 670, y: 250 },
-  photography: { x: 600, y: 110 },
-  motion: { x: 320, y: 150 },
-  poster: { x: 500, y: 60 },
-  "art-direction": { x: 450, y: 180 },
-  digital: { x: 620, y: 190 },
+    "brand-identity": { x: 380, y: 90 },
+    packaging: { x: 470, y: 130 },
+    editorial: { x: 560, y: 80 },
+    campaign: { x: 650, y: 140 },
+    typography: { x: 420, y: 200 },
+    fashion: { x: 340, y: 260 },
+    identity: { x: 530, y: 220 },
+    print: { x: 670, y: 250 },
+    photography: { x: 600, y: 110 },
+    motion: { x: 320, y: 150 },
+    poster: { x: 500, y: 60 },
+    "art-direction": { x: 450, y: 180 },
+    digital: { x: 620, y: 190 },
   };
 
   setOpenWindows((prev) => [
     ...prev,
     {
       id,
-      ...positions[id as keyof typeof positions],
+      ...(isMobile
+        ? { x: 15, y: 80 }
+        : positions[id as keyof typeof positions]),
     },
   ]);
 };
@@ -611,8 +615,22 @@ const startDrag = (
 </div>
 
       {/* DOCK */}
-      <footer className="absolute bottom-8 left-1/2 -translate-x-1/2 z-50">
-        <div className="flex gap-3 px-4 py-2 rounded-2xl bg-white/13 backdrop-blur-xl border border-white/10">
+    <footer
+  className="
+    fixed
+    left-1/2
+    -translate-x-1/2
+    z-50
+    w-[31vw]
+    min-w-[420px]
+    max-w-[520px]
+  "
+     
+     style={{
+     bottom: "calc(env(safe-area-inset-bottom) + 20px)",
+    }}
+>
+  <div className="flex justify-around items-center px-0 py-2 rounded-2xl bg-white/13 backdrop-blur-xl border border-white/10">
 
           {/* InDesign */}
           <button
@@ -684,6 +702,7 @@ const startDrag = (
     Photos
   </div>
 </button>
+<div className="w-px h-10 bg-white/20 self-center" />
           {/* Instagram */}
 <a
   href="https://instagram.com"
@@ -754,6 +773,15 @@ const startDrag = (
     absolute
     w-[700px]
     h-[520px]
+
+    max-md:w-[92vw]
+    max-md:h-[75vh]
+
+    max-md:left-1/2
+    max-md:top-1/2
+    max-md:-translate-x-1/2
+    max-md:-translate-y-1/2
+
     bg-[#f7f7f7]
     rounded-[13px]
     overflow-hidden
@@ -874,21 +902,28 @@ if (project) {
       className="fixed inset-0 pointer-events-none"
     >
       <div
-  style={{
-    left: window.x,
-    top: window.y,
-  }}
+style={{
+  left: window.x,
+  top: window.y,
+}}
   onMouseDown={() => bringToFront(index)}
   className="
-    absolute
-    w-[700px]
-    h-[520px]
-    bg-[#f7f7f7]
-    rounded-[13px]
-    overflow-hidden
-    shadow-xl
-    pointer-events-auto
-  "
+  absolute
+  w-[700px]
+  h-[520px]
+
+  md:w-[700px]
+  md:h-[520px]
+
+  max-md:w-[92vw]
+  max-md:h-[75vh]
+
+  bg-[#f7f7f7]
+  rounded-[13px]
+  overflow-hidden
+  shadow-xl
+  pointer-events-auto
+"
 >
 
   <div
