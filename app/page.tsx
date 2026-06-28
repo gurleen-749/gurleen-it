@@ -4,11 +4,11 @@ import { useState } from "react";
 
 const projects = [
   {
-    title: "Brand Identity",
-    image: "/projects/project1.jpg",
+    title: "Ena Balian",
+    image: "/gallery/ena-1.jpg",
     x: "18%",
     y: "25%",
-    slug: "brand-identity",
+    slug: "ena-balian",
   },
   {
     title: "Packaging",
@@ -53,39 +53,39 @@ const projects = [
     slug: "identity",
   },
   {
-    title: "Print",
-    image: "/projects/project8.jpg",
+    title: "GMuseum",
+    image: "/gallery/gmuseum.jpg",
     x: "72%",
     y: "70%",
-    slug: "print",
+    slug: "gmuseum",
   },
   {
-    title: "Photography",
-    image: "/projects/project9.jpg",
+    title: "sspa",
+    image: "/gallery/sspa.jpg",
     x: "65%",
     y: "25%",
-    slug: "photography",
+    slug: "sspa",
   },
   {
-    title: "Motion",
-    image: "/projects/project10.jpg",
+    title: "SEASONAL EDITS",
+    image: "/gallery/se-1.jpg",
     x: "28%",
     y: "38%",
-    slug: "motion",
+    slug: "se",
   },
   {
-    title: "Poster",
-    image: "/projects/project11.jpg",
+    title: "Weather",
+    image: "/gallery/weather.jpg",
     x: "42%",
     y: "15%",
-    slug: "poster",
+    slug: "weather",
   },
   {
-    title: "Art Direction",
-    image: "/projects/project12.jpg",
+    title: "Gyfia",
+    image: "/gallery/gyfia-1.jpg",
     x: "45%",
     y: "51%",
-    slug: "art-direction",
+    slug: "gyfia",
   },
   {
     title: "Digital",
@@ -96,32 +96,88 @@ const projects = [
   },
 ];
 
-const projectData = {
-  "brand-identity": {
-    title: "Brand Identity",
-    subtitle: "Client Name",
-    description: "Long project description goes here.",
-    image: "/gallery/brand-identity.jpg",
-
-    details: [
-      "Graphic Design",
-      "Brand Identity",
-      "Art Direction",
-    ],
-
-    preview: "/gallery/brand-identity-cover.jpg",
-
-    credits: [
-      "Creative Direction: Gurleen Kaur",
-      "Design: Gurleen Kaur",
-    ],
-
-    gallery: [
-      "/gallery/brand-identity-1.jpg",
-      "/gallery/brand-identity-2.jpg",
-      "/gallery/brand-identity-3.jpg",
-    ],
+const polimiProjects = [
+  {
+    title: "Sebastian",
+    cover: "/polimi/sebastian.png",
+    pdf: "/pdfs/sebastian.pdf",
   },
+  {
+    title: "love",
+    cover: "/polimi/love.png",
+    pdf: "/pdfs/love.pdf",
+  },
+  {
+    title: "row",
+    cover: "/polimi/row.png",
+    pdf: "/pdfs/row.pdf",
+  },
+  {
+    title: "byredo",
+    cover: "/polimi/byredo.png",
+    pdf: "/pdfs/byredo.pdf",
+  },
+  {
+    title: "echo",
+    cover: "/polimi/echo.png",
+    pdf: "/pdfs/echo.pdf",
+  },
+   {
+    title: "cartier",
+    cover: "/polimi/cartier.png",
+    pdf: "/pdfs/cartier.pdf",
+  },
+  {
+    title: "rahul-mishra",
+    cover: "/polimi/rahul-mishra.png",
+    pdf: "/pdfs/rahul-mishra.pdf",
+  },
+  {
+    title: "miista",
+    cover: "/polimi/miista.png",
+    pdf: "/pdfs/miista.pdf",
+  },
+  {
+    title: "rubelli",
+    cover: "/polimi/rubelli.png",
+    pdf: "/pdfs/rubelli.pdf",
+  },
+  {
+    title: "ecoalf",
+    cover: "/polimi/ecoalf.png",
+    pdf: "/pdfs/ecoalf.pdf",
+  },
+];
+
+const projectData = {
+"ena-balian": {
+  title: "Ena Balian",
+  subtitle: "Brand Identity",
+  description: "This multi-disciplinary creative portfolio showcases the sophisticated branding, art direction, and visual storytelling of Ena Balian Creation. Spanning diverse industries from sustainable skincare packaging and editorial print layout to sleek digital social networks, the project demonstrates a cohesive, minimalist aesthetic rooted in intentional design. It seamlessly bridges commercial identity with raw artistic expression, integrating high-end macro photography, tactile print elements, and intimate film cinematography. Grounded in a philosophy of quiet reflection, the collection captures the subtle, elegant space between memory and possibility, resulting in a deeply resonant, premium brand experience.",
+
+  image: "/gallery/ena-1.jpg",
+
+  preview: "/gallery/ena-1.jpg",
+
+  gallery: [
+    "/gallery/ena-2.jpg",
+    "/gallery/ena-3.jpg",
+    "/gallery/ena-4.jpg",
+    "/gallery/ena-5.jpg",
+    "/gallery/ena-6.jpg",
+  ],
+
+  details: [
+    "Graphic Design",
+    "Brand Identity",
+    "UI Design",
+  ],
+
+  credits: [
+    "Creative Direction: Gurleen Kaur",
+    "Design: Gurleen Kaur",
+  ],
+},
 
   packaging: {
     title: "Packaging",
@@ -135,7 +191,7 @@ const projectData = {
       "Art Direction",
     ],
 
-    preview: "/gallery/packaging-cover.jpg",
+    preview: "/gallery/cpc-1.jpg",
 
     credits: [
       "Design: Gurleen Kaur",
@@ -143,9 +199,7 @@ const projectData = {
     ],
 
     gallery: [
-      "/gallery/packaging-1.jpg",
-      "/gallery/packaging-2.jpg",
-      "/gallery/packaging-3.jpg",
+      "/gallery/cpc-2.jpg",
     ],
   },
 
@@ -277,11 +331,11 @@ const projectData = {
     ],
   },
 
-  print: {
-    title: "Print",
+  gmuseum: {
+    title: "GMuseum",
     subtitle: "Print Design",
     description: "Long project description goes here.",
-    image: "/gallery/print.jpg",
+    image: "/gallery/gmuseum.jpg",
 
     details: [
       "Print Design",
@@ -289,74 +343,83 @@ const projectData = {
       "Production",
     ],
 
-    preview: "/gallery/print-cover.jpg",
+    preview: "/gallery/gmuseum.jpg",
 
     credits: [
       "Print Design: Gurleen Kaur",
     ],
 
     gallery: [
-      "/gallery/print-1.jpg",
-      "/gallery/print-2.jpg",
-      "/gallery/print-3.jpg",
+      "/gallery/gmuseum-0.jpg",
+      "/gallery/gmuseum-1.jpg",
+      "/gallery/gmuseum-2.jpg",
+      "/gallery/gmuseum-3.jpg",
+      "/gallery/gmuseum-4.jpg",
+      "/gallery/gmuseum-5.jpg",
+      "/gallery/gmuseum-6.jpg",
+      "/gallery/gmuseum-7.jpg",
+      "/gallery/gmuseum-8.jpg",
     ],
   },
 
-  photography: {
-    title: "Photography",
-    subtitle: "Photography Project",
-    description: "Long project description goes here.",
-    image: "/gallery/photography.jpg",
+  sspa: {
+    title: "Scandinavian School - Photographic Arts",
+    subtitle: "Informative eBanner",
+    description: "Scandinavian School - Photographic Arts presents a curated collection of contemporary visual narratives, each exploring a distinct perspective. Designed with a clean Swiss-inspired layout, every page balances generous white space, refined typography, and striking imagery to create a timeless publication aesthetic. The consistent grid system allows each photograph to remain the focal point while accompanying descriptions provide context and artistic intent. Together, the series celebrates the diversity of photographic expression, highlighting themes of identity, and spatial exploration through a cohesive visual language that is both minimal, sophisticated, and thoughtfully composed.",
+    image: "/gallery/sspa.jpg",
 
     details: [
-      "Photography",
-      "Retouching",
-      "Art Direction",
+      "Prototyping",
+      "Design",
     ],
 
-    preview: "/gallery/photography-cover.jpg",
+    preview: "/gallery/sspa.jpg",
 
     credits: [
-      "Photography: Gurleen Kaur",
+      "Design: Gurleen Kaur",
     ],
 
     gallery: [
-      "/gallery/photography-1.jpg",
-      "/gallery/photography-2.jpg",
-      "/gallery/photography-3.jpg",
+      "/gallery/sspa-1.jpg",
+      "/gallery/sspa-2.jpg",
+      "/gallery/sspa-3.jpg",
+      "/gallery/sspa-4.jpg",
+      "/gallery/sspa-5.jpg",
     ],
   },
 
-  motion: {
-    title: "Motion",
-    subtitle: "Motion Design",
-    description: "Long project description goes here.",
-    image: "/gallery/motion.jpg",
+  se: {
+    title: "Seasonal Edits",
+    subtitle: "Socials | Website",
+    description: "Inspired by the refined language of luxury editorial design, this curated collection celebrates timeless objects through a minimalist visual narrative. Each piece is presented with generous negative space, elegant typography, and a muted colour palette that allows the product to become the focal point. From sculptural accessories and handcrafted homeware to fashion essentials and lifestyle objects, every selection reflects a balance of craftsmanship, functionality, and understated sophistication. The layout evokes the feeling of a premium printed catalogue, encouraging slow exploration and appreciation of detail. The result is a modern editorial experience that transforms everyday products into collectible design statements with lasting aesthetic value.",
+    image: "/gallery/se-1.jpg",
 
     details: [
-      "Motion Graphics",
-      "Animation",
-      "Video Editing",
+      "Graphics",
+      "Editing",
     ],
 
-    preview: "/gallery/motion-cover.jpg",
+    preview: "/gallery/se-1.jpg",
 
     credits: [
-      "Motion Design: Gurleen Kaur",
+      "Design: Gurleen Kaur",
     ],
 
     gallery: [
-      "/gallery/motion-1.jpg",
-      "/gallery/motion-2.jpg",
-      "/gallery/motion-3.jpg",
+      "/gallery/se-2.jpg",
+      "/gallery/se-3.jpg",
+      "/gallery/se-4.jpg",
+      "/gallery/se-5.jpg",
+      "/gallery/se-6.jpg",
+      "/gallery/se-web.jpg",
     ],
   },
 
-  poster: {
-    title: "Poster",
+  weather: {
+    title: "Weather",
     subtitle: "Poster Series",
     description: "Long project description goes here.",
-    image: "/gallery/poster.jpg",
+    image: "/gallery/weather.jpg",
 
     details: [
       "Poster Design",
@@ -364,24 +427,27 @@ const projectData = {
       "Print",
     ],
 
-    preview: "/gallery/poster-cover.jpg",
+    preview: "/gallery/weather.jpg",
 
     credits: [
       "Poster Design: Gurleen Kaur",
     ],
 
     gallery: [
-      "/gallery/poster-1.jpg",
-      "/gallery/poster-2.jpg",
-      "/gallery/poster-3.jpg",
+      "/gallery/weather-1.jpg",
+      "/gallery/weather-2.jpg",
+      "/gallery/weather-3.jpg",
+      "/gallery/weather-4.jpg",
+      "/gallery/weather-5.jpg",
+      "/gallery/weather-6.jpg",
     ],
   },
 
-  "art-direction": {
-    title: "Art Direction",
-    subtitle: "Creative Direction",
-    description: "Long project description goes here.",
-    image: "/gallery/art-direction.jpg",
+  "gyfia": {
+    title: "Gyfia",
+    subtitle: "Web Design",
+    description: "Gyfia is a luxury skincare e-commerce website inspired by the harmony of Korean beauty traditions and modern scientific innovation. The design embraces a calm, editorial aesthetic with generous white space, refined typography, and warm, natural imagery that reflects purity and simplicity. Every interaction is intentionally minimal, allowing the products and their ingredients to become the visual focus. The website showcases a curated collection of vegan skincare through immersive product photography, thoughtful storytelling, and an intuitive shopping experience. Built to evoke trust, sophistication, and timeless elegance, Gyfia creates a digital environment where wellness, sustainability, and premium skincare seamlessly come together for the modern conscious consumer.",
+    image: "/gallery/gyfia-1.jpg",
 
     details: [
       "Creative Direction",
@@ -389,16 +455,16 @@ const projectData = {
       "Campaign Strategy",
     ],
 
-    preview: "/gallery/art-direction-cover.jpg",
+    preview: "/gallery/gyfia-2.jpg",
 
     credits: [
       "Art Direction: Gurleen Kaur",
     ],
 
     gallery: [
-      "/gallery/art-direction-1.jpg",
-      "/gallery/art-direction-2.jpg",
-      "/gallery/art-direction-3.jpg",
+      "/gallery/gyfia-3.jpg",
+      "/gallery/gyfia-4.jpg",
+      "/gallery/gyfia-5.jpg",
     ],
   },
 
@@ -453,13 +519,12 @@ const startDrag = (
   index: number,
   e: React.MouseEvent<HTMLDivElement>
 ) => {
-
-  bringToFront(index);
+  e.preventDefault();
 
   const startX = e.clientX;
   const startY = e.clientY;
 
-  const window = openWindows[index];
+  const { x, y } = openWindows[index];
 
   const handleMove = (moveEvent: MouseEvent) => {
     setOpenWindows((prev) =>
@@ -467,8 +532,8 @@ const startDrag = (
         i === index
           ? {
               ...w,
-              x: window.x + (moveEvent.clientX - startX),
-              y: window.y + (moveEvent.clientY - startY),
+              x: x + (moveEvent.clientX - startX),
+              y: y + (moveEvent.clientY - startY),
             }
           : w
       )
@@ -491,23 +556,24 @@ const startDrag = (
     indesign: { x: 610, y: 213 },
     photoshop: { x: 580, y: 265 },
     illustrator: { x: 650, y: 330 },
-    error: { x: 750, y: 395 },
+    polimi: { x: 500, y: 150},
+    error: { x: 830, y: 255 },
     notes: { x: 450, y: 100 },
     photos: { x: 500, y: 120 },
     bin: { x: 600, y: 180 },
 
-    "brand-identity": { x: 380, y: 90 },
+    "ena-balian": { x: 380, y: 90 },
     packaging: { x: 470, y: 130 },
     editorial: { x: 560, y: 80 },
     campaign: { x: 650, y: 140 },
     typography: { x: 420, y: 200 },
     fashion: { x: 340, y: 260 },
-    identity: { x: 530, y: 220 },
-    print: { x: 670, y: 250 },
-    photography: { x: 600, y: 110 },
-    motion: { x: 320, y: 150 },
-    poster: { x: 500, y: 60 },
-    "art-direction": { x: 450, y: 180 },
+    "weather": { x: 530, y: 220 },
+    "print": { x: 670, y: 250 },
+    "sspa": { x: 600, y: 110 },
+    "gmuseum": { x: 320, y: 150 },
+    "se": { x: 500, y: 60 },
+    "gyfia": { x: 450, y: 180 },
     digital: { x: 620, y: 190 },
   };
 
@@ -542,6 +608,13 @@ const startDrag = (
       icon: "/icons/ai.png",
       message:
         "This file contains 12,347 anchor points. Good luck finding the right one.",
+    },
+
+    polimi: {
+      title: "Polimi",
+      icon: "/icons/polimi.png",
+      message:
+        "",
     },
 
     error: {
@@ -668,6 +741,21 @@ const startDrag = (
             </div>
           </button>
 
+
+          {/* Polimi */}
+          
+          <button
+            onClick={() => openWindow("polimi")}
+            className="relative group cursor-pointer"
+          >
+            <img src="/icons/polimi.png" alt="" className="w-9 h-9" />
+
+            <div className="absolute bottom-[130%] left-1/2 -translate-x-1/2 px-3 py-1 rounded-md bg-[#9a9a9a] text-white text-[11px] whitespace-nowrap opacity-0 group-hover:opacity-100 transition-all duration-200 pointer-events-none">
+              Polimi
+            </div>
+          </button>
+<div className="w-px h-10 bg-white/20 self-center" />
+
           {/* Error */}
           <button
             onClick={() => openWindow("error")}
@@ -679,7 +767,7 @@ const startDrag = (
               Error
             </div>
           </button>
-<div className="w-px h-10 bg-white/20 self-center" />
+          
           {/* Notes */}
 <button
   onClick={() => openWindow("notes")}
@@ -755,7 +843,210 @@ const startDrag = (
 
   if (window.id === "notes") return null;
 
-  if (window.id === "photos") {
+  if (window.id === "error") {
+  const apps = [
+    {
+      icon: "/icons/ai.png",
+      name: "Adobe Illustrator",
+      memory: "1.53 GB",
+    },
+    {
+      icon: "/icons/ps.png",
+      name: "Adobe Photoshop",
+      memory: "13.56 GB",
+    },
+      {
+      icon: "/icons/id.png",
+      name: "Adobe InDesign",
+      memory: "2.45 GB",
+    },
+    {
+      icon: "/icons/vscode.png",
+      name: "Code",
+      memory: "2.38 GB",
+    },
+    {
+      icon: "/icons/chrome.png",
+      name: "Figma",
+      memory: "225 MB",
+    },
+    {
+      icon: "/icons/safari.png",
+      name: "Safari",
+      memory: "20.15 GB",
+    },
+    {
+      icon: "/icons/terminal.png",
+      name: "Terminal",
+      memory: "1.44 GB",
+    },
+    {
+      icon: "/icons/finder.png",
+      name: "Finder",
+      memory: "577 MB",
+    },
+  ];
+
+  return (
+    <div
+      key={`${window.id}-${index}`}
+      style={{ zIndex: 100 + index }}
+      className="fixed inset-0 pointer-events-none"
+    >
+      <div
+        style={{
+          left: window.x,
+          top: window.y,
+        }}
+        onMouseDown={() => bringToFront(index)}
+        className="
+          absolute
+          w-[430px]
+          h-[490px]
+          bg-[#f5f5f7]
+          rounded-[24px]
+          shadow-1xl
+          overflow-hidden
+          pointer-events-auto
+        "
+      >
+<div
+  onMouseDown={(e) => startDrag(index, e)}
+  className="
+    h-9
+    bg-[#f5f5f7]
+    border-b
+    border-[#d7d7d7]
+    flex
+    items-center
+    px-5
+    cursor-move
+  "
+>
+  <button
+    onClick={() =>
+      setOpenWindows(prev =>
+        prev.filter((_, i) => i !== index)
+      )
+    }
+    className="w-3 h-3 rounded-full bg-[#ff5f57]" />
+  <div className="w-3 h-3 rounded-full bg-[#ffbd2e] ml-2" />
+  <div className="w-3 h-3 rounded-full bg-[#28c840] ml-2" />
+  <h2 className="ml-5 flex-1 text-left text-[11px] font-semibold text-[#2b2b2b]">
+  Force Quit Applications
+</h2>
+</div>
+<div className="flex px-6 pt-6 gap-7">
+
+  <img
+    src="/icons/error.png"
+    alt=""
+    className="w-[90px] h-[90px] object-contain"
+  />
+
+  <div>
+
+    <h2 className="text-[17px] leading-6 font-medium text-[#2b2b2b]">
+      Your system has run out of
+      <br />
+      application memory.
+    </h2>
+
+    <p className="mt-1 text-[12px] leading-5 text-[#444]">
+      To avoid problems with your computer, quit
+      <br />
+       any applications you are not using.
+    </p>
+
+  </div>
+
+</div>
+<div className="px-6 pt-6">
+
+  <div className="border border-[#d8d8d8] rounded-md bg-white">
+
+    {apps.map((app) => (
+
+      <div
+        key={app.name}
+        className="flex items-center justify-between px-3 py-1"
+      >
+
+        <div className="flex items-center gap-3">
+
+          <img
+            src={app.icon}
+            className="w-5 h-5"
+          />
+
+          <span className="text-[13px]">
+            {app.name}
+          </span>
+
+        </div>
+
+        <span className="text-[13px]">
+          {app.memory}
+        </span>
+
+      </div>
+
+    ))}
+
+  </div>
+
+</div>
+<div className="absolute bottom-7 right-7 flex gap-3">
+
+  <button
+    className="
+  px-4
+  h-8
+  min-w-[88px]
+  rounded-full
+  bg-[#efefef]
+  text-[13px]
+  text-[#555]
+  font-medium
+  transition-all
+  duration-150
+  hover:bg-[#e4e4e4]
+"
+  >
+    Resume
+  </button>
+
+  <button
+    onClick={() =>
+      setOpenWindows(prev =>
+        prev.filter((_, i) => i !== index)
+      )
+    }
+    className="
+  px-4
+  h-8
+  min-w-[100px]
+  rounded-full
+  bg-[#efefef]
+  text-[13px]
+  text-[#555]
+  font-medium
+  transition-all
+  duration-150
+  hover:bg-[#007AFF]
+  hover:text-white
+"
+  >
+    Force Quit
+  </button>
+
+</div>
+</div>
+</div>
+);
+}
+
+if (window.id === "photos") {
   
   return (
     <div
@@ -829,14 +1120,10 @@ const startDrag = (
   Information about: Gallery
 </span>
           </div>
-
-          <div className="flex h-[calc(100%-32px)]">
-
-  <div className="flex-1 overflow-y-auto bg-[#f7f7f7]">
-
-    <div className="px-4 pt-4">
-
-      <div className="flex items-center gap-3 mb-3">
+         <div className="flex h-[calc(100%-32px)]">
+         <div className="flex-1 overflow-y-auto bg-[#f7f7f7]">
+         <div className="px-4 pt-4">
+         <div className="flex items-center gap-3 mb-3">
 
         <img
           src="/icons/photos.png"
@@ -896,6 +1183,118 @@ const startDrag = (
       </div>
     );
   }
+if (window.id === "polimi") {
+  return (
+    <div
+      key={`${window.id}-${index}`}
+      style={{ zIndex: 100 + index }}
+      className="fixed inset-0 pointer-events-none"
+    >
+      <div
+        style={{
+          left: window.x,
+          top: window.y,
+        }}
+        onMouseDown={() => bringToFront(index)}
+        className="
+          absolute
+          w-[720px]
+          h-[520px]
+          bg-[#f8f8f8]
+          rounded-[13px]
+          overflow-hidden
+          shadow-xl
+          pointer-events-auto
+        "
+      >
+        {/* Title Bar */}
+        <div
+          onMouseDown={(e) => startDrag(index, e)}
+          className="
+            h-8
+            bg-[#ece9e6]
+            border-b
+            border-[#cfcfcf]
+            flex
+            items-center
+            px-3
+            gap-2
+            cursor-move
+          "
+        >
+          <button
+            onClick={() =>
+              setOpenWindows(prev =>
+                prev.filter((_, i) => i !== index)
+              )
+            }
+            className="w-[10px] h-[10px] rounded-full bg-[#ff5f57]"
+          />
+          <div className="w-[10px] h-[10px] rounded-full bg-[#ffbd2e]" />
+          <div className="w-[10px] h-[10px] rounded-full bg-[#28c840]" />
+
+          <span className="ml-3 text-[11px]">
+            Polimi
+          </span>
+        </div>
+<div className="mt-0 pt-5">
+
+  <img
+    src="/icons/polimi.png"
+    alt="Polimi"
+    className="w-13 h-13 mx-auto mb-3"
+  />
+
+  <h2 className="text-1xl font-semibold text-center">
+    Premium Design Management
+  </h2>
+
+  <p className="text-sm text-gray-500 text-center mt-0">
+    Politecnico di Milano
+  </p>
+
+  <p className="max-w-3xl mx-auto mt-5 text-[12px] leading-5 text-gray-600 text-center">
+    The following collection represents selected academic projects completed
+    during my Master's in Premium Design Management at Politecnico di Milano.
+    Spanning luxury branding, editorial design, visual identity, product
+    communication, retail experiences and fashion, each project explores the
+    relationship between strategic thinking and contemporary visual storytelling.
+    Together, they reflect my approach to creating thoughtful, research-driven,
+    and aesthetically refined design solutions.
+  </p>
+
+</div>
+        <div className="p-6 overflow-auto h-[calc(100%-32px)]">
+          {/* Put your content here */}
+          <div className="grid grid-cols-5 gap-5">
+
+  {polimiProjects.map((project) => (
+
+    <button
+      key={project.title}
+      className="text-left hover:scale-105 transition"
+      onClick={() => globalThis.window.open(project.pdf, "_blank")}
+    >
+
+      <img
+        src={project.cover}
+        className="rounded-lg"
+      />
+
+      <p className="mt-3 text-[11px] text-center">
+        {project.title}
+      </p>
+
+    </button>
+
+  ))}
+
+</div>
+        </div>
+      </div>
+    </div>
+  );
+}
   
 const project =
   projectData[
@@ -1036,7 +1435,7 @@ style={{
 
   {/* GALLERY */}
 
-  <div className="grid grid-cols-2 gap-3 mb-5">
+  <div className="grid grid-cols-1 gap-3 mb-5">
 
     {project.gallery?.map((image) => (
       <img
