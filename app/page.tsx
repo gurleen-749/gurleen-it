@@ -11,11 +11,11 @@ const projects = [
     slug: "ena-balian",
   },
   {
-    title: "Packaging",
-    image: "/projects/project2.jpg",
+    title: "CPC",
+    image: "/gallery/cpc.jpg",
     x: "38%",
     y: "32%",
-    slug: "packaging",
+    slug: "cpc",
   },
   {
     title: "Editorial",
@@ -32,25 +32,25 @@ const projects = [
     slug: "campaign",
   },
   {
-    title: "Typography",
-    image: "/projects/project5.jpg",
+    title: "Gret",
+    image: "/gallery/gret.jpg",
     x: "31%",
     y: "55%",
-    slug: "typography",
+    slug: "gret",
   },
   {
-    title: "Fashion",
-    image: "/projects/project6.jpg",
+    title: "Maison Ricardo",
+    image: "/gallery/maison.jpg",
     x: "28%",
     y: "68%",
-    slug: "fashion",
+    slug: "maison",
   },
   {
-    title: "Identity",
-    image: "/projects/project7.jpg",
+    title: "Gisele Brown",
+    image: "/gallery/gisele.jpg",
     x: "52%",
     y: "58%",
-    slug: "identity",
+    slug: "gisele",
   },
   {
     title: "GMuseum",
@@ -88,11 +88,11 @@ const projects = [
     slug: "gyfia",
   },
   {
-    title: "Digital",
-    image: "/projects/project13.jpg",
+    title: "Datar",
+    image: "/gallery/datar.jpg",
     x: "65%",
     y: "50%",
-    slug: "digital",
+    slug: "datar",
   },
 ];
 
@@ -103,47 +103,47 @@ const polimiProjects = [
     pdf: "/pdfs/sebastian.pdf",
   },
   {
-    title: "love",
+    title: "Love",
     cover: "/polimi/love.png",
     pdf: "/pdfs/love.pdf",
   },
   {
-    title: "row",
+    title: "The Row",
     cover: "/polimi/row.png",
     pdf: "/pdfs/row.pdf",
   },
   {
-    title: "byredo",
+    title: "Byredo",
     cover: "/polimi/byredo.png",
     pdf: "/pdfs/byredo.pdf",
   },
   {
-    title: "echo",
+    title: "Echo",
     cover: "/polimi/echo.png",
     pdf: "/pdfs/echo.pdf",
   },
    {
-    title: "cartier",
+    title: "Cartier",
     cover: "/polimi/cartier.png",
     pdf: "/pdfs/cartier.pdf",
   },
   {
-    title: "rahul-mishra",
+    title: "Rahul Mishra",
     cover: "/polimi/rahul-mishra.png",
     pdf: "/pdfs/rahul-mishra.pdf",
   },
   {
-    title: "miista",
+    title: "Miista",
     cover: "/polimi/miista.png",
     pdf: "/pdfs/miista.pdf",
   },
   {
-    title: "rubelli",
+    title: "Rubelli",
     cover: "/polimi/rubelli.png",
     pdf: "/pdfs/rubelli.pdf",
   },
   {
-    title: "ecoalf",
+    title: "Ecoalf",
     cover: "/polimi/ecoalf.png",
     pdf: "/pdfs/ecoalf.pdf",
   },
@@ -179,11 +179,11 @@ const projectData = {
   ],
 },
 
-  packaging: {
-    title: "Packaging",
-    subtitle: "Client Name",
-    description: "Long project description goes here.",
-    image: "/gallery/packaging.jpg",
+  cpc: {
+    title: "Chandigarh Power & Control",
+    subtitle: "Brand Identity",
+    description: "Chandigarh Power & Control is a complete corporate branding and digital design project developed for an industrial manufacturing company specializing in cable management systems, structural solutions, and power equipment. The project includes brand identity, website design, product catalogues, marketing collateral, and promotional banners, creating a cohesive visual language that communicates precision, reliability, and engineering excellence. A clean, modern aesthetic combined with structured layouts and technical imagery reinforces the company's commitment to quality, innovation, and industrial performance.",
+    image: "/gallery/cpc.jpg",
 
     details: [
       "Packaging Design",
@@ -255,11 +255,11 @@ const projectData = {
     ],
   },
 
-  typography: {
-    title: "Typography",
-    subtitle: "Typography Exploration",
+  gret: {
+    title: "Gret",
+    subtitle: "Gret Project",
     description: "Long project description goes here.",
-    image: "/gallery/typography.jpg",
+    image: "/gallery/gret.jpg",
 
     details: [
       "Typography",
@@ -267,24 +267,28 @@ const projectData = {
       "Print",
     ],
 
-    preview: "/gallery/typography-cover.jpg",
+    preview: "/gallery/gret.jpg",
 
     credits: [
       "Typography: Gurleen Kaur",
     ],
 
     gallery: [
-      "/gallery/typography-1.jpg",
-      "/gallery/typography-2.jpg",
-      "/gallery/typography-3.jpg",
+      "/gallery/gret-1.jpg",
+      "/gallery/gret-2.jpg",
+      "/gallery/gret-3.jpg",
+      "/gallery/gret-4.jpg",
+      "/gallery/gret-5.jpg",
+      "/gallery/gret-6.jpg",
+      "/gallery/gret-7.jpg",
     ],
   },
 
-  fashion: {
-    title: "Fashion",
-    subtitle: "Fashion Project",
+  maison: {
+    title: "Maison Ricardo",
+    subtitle: "Maison Ricardo Project",
     description: "Long project description goes here.",
-    image: "/gallery/fashion.jpg",
+    image: "/gallery/maison.jpg",
 
     details: [
       "Fashion Design",
@@ -292,7 +296,7 @@ const projectData = {
       "Photography",
     ],
 
-    preview: "/gallery/fashion-cover.jpg",
+    preview: "/gallery/maison.jpg",
 
     credits: [
       "Creative Direction: Gurleen Kaur",
@@ -300,17 +304,21 @@ const projectData = {
     ],
 
     gallery: [
-      "/gallery/fashion-1.jpg",
-      "/gallery/fashion-2.jpg",
-      "/gallery/fashion-3.jpg",
+      "/gallery/maison-1.jpg",
+      "/gallery/maison-2.jpg",
+      "/gallery/maison-3.jpg",
+      "/gallery/maison-4.jpg",
+      "/gallery/maison-5.jpg",
+      "/gallery/maison-6.jpg",
+      "/gallery/maison-7.jpg",
     ],
   },
 
-  identity: {
-    title: "Identity",
-    subtitle: "Visual Identity System",
+  gisele: {
+    title: "Gisele Brown",
+    subtitle: "User Interface Design",
     description: "Long project description goes here.",
-    image: "/gallery/identity.jpg",
+    image: "/gallery/gisele.jpg",
 
     details: [
       "Visual Identity",
@@ -318,23 +326,27 @@ const projectData = {
       "Design System",
     ],
 
-    preview: "/gallery/identity-cover.jpg",
+    preview: "/gallery/gisele.jpg",
 
     credits: [
       "Identity Design: Gurleen Kaur",
     ],
 
     gallery: [
-      "/gallery/identity-1.jpg",
-      "/gallery/identity-2.jpg",
-      "/gallery/identity-3.jpg",
+      "/gallery/gisele-1.jpg",
+      "/gallery/gisele-2.jpg",
+      "/gallery/gisele-3.jpg",
+      "/gallery/gisele-4.jpg",
+      "/gallery/gisele-5.jpg",
+      "/gallery/gisele-6.jpg",
+      "/gallery/gisele-7.jpg",
     ],
   },
 
   gmuseum: {
     title: "GMuseum",
     subtitle: "Print Design",
-    description: "Long project description goes here.",
+    description: "Gmuseum House Photography Festival is a visual identity system designed for an international photography festival celebrating contemporary image-making. Rooted in Swiss-inspired typography, modular layouts, and halftone photographic treatments, the identity balances clarity with visual expression. Across posters, banners, environmental graphics, and promotional materials, the system creates a cohesive yet flexible language that reflects the festival's themes of perspective, storytelling, and human connection. The result is a timeless, gallery-inspired identity that allows photography to remain the focal point while establishing a strong and recognizable brand presence.",
     image: "/gallery/gmuseum.jpg",
 
     details: [
@@ -350,8 +362,6 @@ const projectData = {
     ],
 
     gallery: [
-      "/gallery/gmuseum-0.jpg",
-      "/gallery/gmuseum-1.jpg",
       "/gallery/gmuseum-2.jpg",
       "/gallery/gmuseum-3.jpg",
       "/gallery/gmuseum-4.jpg",
@@ -359,6 +369,12 @@ const projectData = {
       "/gallery/gmuseum-6.jpg",
       "/gallery/gmuseum-7.jpg",
       "/gallery/gmuseum-8.jpg",
+      "/gallery/gmuseum-9.jpg",
+      "/gallery/gmuseum-10.jpg",
+      "/gallery/gmuseum-11.jpg",
+      "/gallery/gmuseum-12.jpg",
+      "/gallery/gmuseum-13.jpg",
+      "/gallery/gmuseum-14.jpg",
     ],
   },
 
@@ -468,11 +484,11 @@ const projectData = {
     ],
   },
 
-  digital: {
-    title: "Digital",
+  datar: {
+    title: "Datar",
     subtitle: "Digital Design",
     description: "Long project description goes here.",
-    image: "/gallery/digital.jpg",
+    image: "/gallery/datar.jpg",
 
     details: [
       "UI Design",
@@ -480,16 +496,22 @@ const projectData = {
       "Web Design",
     ],
 
-    preview: "/gallery/digital-cover.jpg",
+    preview: "/gallery/datar.jpg",
 
     credits: [
       "Digital Design: Gurleen Kaur",
     ],
 
     gallery: [
-      "/gallery/digital-1.jpg",
-      "/gallery/digital-2.jpg",
-      "/gallery/digital-3.jpg",
+      "/gallery/datar-1.jpg",
+      "/gallery/datar-2.jpg",
+      "/gallery/datar-3.jpg",
+      "/gallery/datar-4.jpg",
+      "/gallery/datar-5.jpg",
+      "/gallery/datar-6.jpg",
+      "/gallery/datar-8.jpg",
+      "/gallery/datar-9.jpg",
+      "/gallery/datar-10.jpg",
     ],
   },
 };
@@ -563,18 +585,18 @@ const startDrag = (
     bin: { x: 600, y: 180 },
 
     "ena-balian": { x: 380, y: 90 },
-    packaging: { x: 470, y: 130 },
+    "cpc": { x: 470, y: 130 },
     editorial: { x: 560, y: 80 },
     campaign: { x: 650, y: 140 },
-    typography: { x: 420, y: 200 },
-    fashion: { x: 340, y: 260 },
+    "gret": { x: 420, y: 200 },
+    "maison": { x: 340, y: 260 },
     "weather": { x: 530, y: 220 },
-    "print": { x: 670, y: 250 },
+    "gisele": { x: 670, y: 250 },
     "sspa": { x: 600, y: 110 },
     "gmuseum": { x: 320, y: 150 },
     "se": { x: 500, y: 60 },
     "gyfia": { x: 450, y: 180 },
-    digital: { x: 620, y: 190 },
+    "datar": { x: 620, y: 190 },
   };
 
   setOpenWindows((prev) => [
@@ -793,7 +815,7 @@ const startDrag = (
 <div className="w-px h-10 bg-white/20 self-center" />
           {/* Instagram */}
 <a
-  href="https://instagram.com"
+  href="https://instagram.com/gurleen.it"
   target="_blank"
   rel="noopener noreferrer"
   className="relative group"
@@ -861,12 +883,12 @@ const startDrag = (
       memory: "2.45 GB",
     },
     {
-      icon: "/icons/vscode.png",
+      icon: "/icons/code.png",
       name: "Code",
       memory: "2.38 GB",
     },
     {
-      icon: "/icons/chrome.png",
+      icon: "/icons/figma.png",
       name: "Figma",
       memory: "225 MB",
     },
@@ -1748,8 +1770,9 @@ if (window.id === "bin") {
 
 
           {/* CONTENT */}
-          <div className="flex-1 px-4 pt-3 pb-4 overflow-y-auto text-black">
+<div className="flex-1 px-4 pt-3 pb-4 overflow-y-auto text-black">
 
+  {/* ABOUT */}
   {notesTab === "about" && (
     <>
       <p className="text-[11px] leading-[1.15] max-w-[520px] mb-4">
@@ -1774,8 +1797,18 @@ if (window.id === "bin") {
           "Motion Design",
           "Photography",
           "Web",
-        ].map((item) => (
-          <div key={item} className="flex items-center gap-2">
+          "Album Covers",
+          "Merchandise Design",
+          "Posters",
+          "Logotypes",
+          "Fonts",
+          "Clothing Design",
+          "Social Media Design",
+          "Indirect Collaboration with Spotify",
+          "Event Materials & Visual Design",
+          "Social Media Content",
+        ].map((item, index) => (
+          <div key={`${item}-${index}`} className="flex items-center gap-2">
             <span className="w-4 h-4 rounded-full bg-[#f2b32a] text-white flex items-center justify-center text-[8px]">
               ✓
             </span>
@@ -1786,28 +1819,129 @@ if (window.id === "bin") {
     </>
   )}
 
+  {/* CV */}
   {notesTab === "cv" && (
-    <div className="text-[10px] space-y-2">
-      <h3 className="font-semibold mb-3">Experience</h3>
+    <>
+      <h3 className="text-[11px] font-semibold mb-3">
+        Experience
+      </h3>
 
-      <p>SBM Label — Art Director (2023–2025)</p>
-      <p>Newonce — Graphic Designer (2023)</p>
-      <p>Albo Albo — Graphic Designer (2021–2023)</p>
-      <p>Freelance — Graphic Designer (2019–Present)</p>
-    </div>
+      <div className="space-y-1 text-[10px] mb-6">
+        {[
+          "Orb Twine — Product Designer & Sustainability Consultant (2025–Present)",
+          "Sebastian Milano — Graphic Designer (2024)",
+          "Freelance — Brand Identity, UI/UX & Graphic Designer (2020–Present)",
+          "Medivisual — Graphic Designer (2019–2022)",
+          "Five Waters — UI/UX Design Intern (2019)",
+        ].map((item, index) => (
+          <div key={`${item}-${index}`} className="flex items-center gap-2">
+            <span className="w-4 h-4 rounded-full bg-[#f2b32a] text-white flex items-center justify-center text-[8px]">
+              ✓
+            </span>
+            <span>{item}</span>
+          </div>
+        ))}
+      </div>
+
+      <h3 className="text-[11px] font-semibold mb-3">
+        Education
+      </h3>
+
+      <div className="space-y-1 text-[10px] mb-6">
+        {[
+          "Politecnico di Milano — Premium Design Management (2023–2024)",
+          "Chandigarh University — M.Sc. Animation & Multimedia (2017–2019)",
+          "Howest University, Belgium — Erasmus+ Exchange Programme",
+        ].map((item, index) => (
+          <div key={`${item}-${index}`} className="flex items-center gap-2">
+            <span className="w-4 h-4 rounded-full bg-[#f2b32a] text-white flex items-center justify-center text-[8px]">
+              ✓
+            </span>
+            <span>{item}</span>
+          </div>
+        ))}
+      </div>
+
+      <h3 className="text-[11px] font-semibold mb-3">
+        Skills
+      </h3>
+
+      <div className="space-y-1 text-[10px] mb-6">
+        {[
+          "Art Direction",
+          "Creative Direction",
+          "Brand Identity",
+          "UI / UX Design",
+          "Editorial Design",
+          "Packaging Design",
+          "Photography",
+          "Web Design",
+          "Print Production",
+          "Sustainability Strategy",
+        ].map((item, index) => (
+          <div key={`${item}-${index}`} className="flex items-center gap-2">
+            <span className="w-4 h-4 rounded-full bg-[#f2b32a] text-white flex items-center justify-center text-[8px]">
+              ✓
+            </span>
+            <span>{item}</span>
+          </div>
+        ))}
+      </div>
+
+      <h3 className="text-[11px] font-semibold mb-3">
+        Software
+      </h3>
+
+      <div className="space-y-1 text-[10px] mb-6">
+        {[
+          "Adobe Photoshop",
+          "Adobe Illustrator",
+          "Adobe InDesign",
+          "Figma",
+          "Shopify",
+          "Microsoft Office",
+        ].map((item, index) => (
+          <div key={`${item}-${index}`} className="flex items-center gap-2">
+            <span className="w-4 h-4 rounded-full bg-[#f2b32a] text-white flex items-center justify-center text-[8px]">
+              ✓
+            </span>
+            <span>{item}</span>
+          </div>
+        ))}
+      </div>
+
+      <h3 className="text-[11px] font-semibold mb-3">
+        Languages
+      </h3>
+
+      <div className="space-y-1 text-[10px]">
+        {[
+          "English — IELTS 7.5",
+          "Punjabi — Native",
+          "Hindi — Fluent",
+        ].map((item, index) => (
+          <div key={`${item}-${index}`} className="flex items-center gap-2">
+            <span className="w-4 h-4 rounded-full bg-[#f2b32a] text-white flex items-center justify-center text-[8px]">
+              ✓
+            </span>
+            <span>{item}</span>
+          </div>
+        ))}
+      </div>
+    </>
   )}
 
+  {/* INTERESTS */}
   {notesTab === "interests" && (
     <div className="grid grid-cols-2 gap-2">
-      <img src="/interests/1.jpg" className="rounded-md" />
-      <img src="/interests/2.jpg" className="rounded-md" />
-      <img src="/interests/3.jpg" className="rounded-md" />
-      <img src="/interests/4.jpg" className="rounded-md" />
+      <img src="/interests/1.jpg" alt="" className="rounded-md" />
+      <img src="/interests/2.jpg" alt="" className="rounded-md" />
+      <img src="/interests/3.jpg" alt="" className="rounded-md" />
+      <img src="/interests/4.jpg" alt="" className="rounded-md" />
     </div>
   )}
-  
 
-          </div>
+</div>
         </div>
       </div>
     </div>
