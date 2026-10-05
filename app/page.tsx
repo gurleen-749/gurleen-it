@@ -13,23 +13,23 @@ const projects = [
   {
     title: "CPC",
     image: "/gallery/cpc.jpg",
-    x: "38%",
-    y: "32%",
+    x: "28%",
+    y: "67%",
     slug: "cpc",
   },
   {
-    title: "Editorial",
-    image: "/projects/project3.jpg",
+    title: "Gland",
+    image: "/gallery/gland.jpg",
     x: "62%",
     y: "18%",
-    slug: "editorial",
+    slug: "gland",
   },
   {
-    title: "Campaign",
-    image: "/projects/project4.jpg",
+    title: "Colab",
+    image: "/gallery/colab.jpg",
     x: "78%",
     y: "48%",
-    slug: "campaign",
+    slug: "colab",
   },
   {
     title: "Gret",
@@ -41,8 +41,8 @@ const projects = [
   {
     title: "Maison Ricardo",
     image: "/gallery/maison.jpg",
-    x: "28%",
-    y: "68%",
+    x: "35%",
+    y: "28%",
     slug: "maison",
   },
   {
@@ -203,11 +203,11 @@ const projectData = {
     ],
   },
 
-  editorial: {
-    title: "Editorial",
-    subtitle: "Magazine Name",
-    description: "Long project description goes here.",
-    image: "/gallery/editorial.jpg",
+  gland: {
+    title: "Gland House",
+    subtitle: "Product Design",
+    description: "The watering jug is inspired by the Kingfisher bird, celebrated for its distinctive proportions, streamlined form, and remarkable relationship with water. The jug translates the Kingfisher’s characteristic long, pointed beak into the elongated watering spout, while its rounded body and sweeping curves reinterpret the bird’s compact silhouette. The handle echoes the sense of a folded wing, creating a continuous, fluid form rather than treating the handle, body, and spout as separate elements. The translucent teal colour is drawn from the Kingfisher’s iridescent blue-green plumage, allowing light to pass through the material and giving the object a subtle, almost aquatic quality. Rather than directly reproducing the bird, the design abstracts its most recognisable characteristics into a functional object—turning the Kingfisher’s form, movement, and connection to water into a contemporary watering jug.",
+    image: "/gallery/gland.jpg",
 
     details: [
       "Editorial Design",
@@ -215,7 +215,7 @@ const projectData = {
       "Print",
     ],
 
-    preview: "/gallery/editorial-cover.jpg",
+    preview: "/gallery/gland.jpg",
 
     credits: [
       "Editorial Design: Gurleen Kaur",
@@ -223,17 +223,15 @@ const projectData = {
     ],
 
     gallery: [
-      "/gallery/editorial-1.jpg",
-      "/gallery/editorial-2.jpg",
-      "/gallery/editorial-3.jpg",
+      "/gallery/gland-1.jpg",
     ],
   },
 
-  campaign: {
-    title: "Campaign",
-    subtitle: "Campaign Project",
-    description: "Long project description goes here.",
-    image: "/gallery/campaign.jpg",
+  colab: {
+    title: "Colab",
+    subtitle: "Website UI/UX Design",
+    description: "A multidisciplinary digital design project exploring how bold visual systems can bring together brand identity, web design, UX, and visual storytelling. The project combines a strong typographic language with editorial layouts, immersive imagery, and modular compositions to create a cohesive digital portfolio experience. The visual direction is intentionally minimal yet expressive—using oversized typography, monochrome foundations, sharp image crops, and carefully controlled spacing to balance functionality with a strong editorial character.",
+    image: "/gallery/colab.jpg",
 
     details: [
       "Campaign Design",
@@ -241,7 +239,7 @@ const projectData = {
       "Art Direction",
     ],
 
-    preview: "/gallery/campaign-cover.jpg",
+    preview: "/gallery/colab.jpg",
 
     credits: [
       "Art Direction: Gurleen Kaur",
@@ -249,9 +247,8 @@ const projectData = {
     ],
 
     gallery: [
-      "/gallery/campaign-1.jpg",
-      "/gallery/campaign-2.jpg",
-      "/gallery/campaign-3.jpg",
+      "/gallery/colab-1.jpg",
+      "/gallery/colab-2.jpg",
     ],
   },
 
@@ -586,8 +583,8 @@ const startDrag = (
 
     "ena-balian": { x: 380, y: 90 },
     "cpc": { x: 470, y: 130 },
-    editorial: { x: 560, y: 80 },
-    campaign: { x: 650, y: 140 },
+    "gland": { x: 560, y: 80 },
+    "colab": { x: 650, y: 140 },
     "gret": { x: 420, y: 200 },
     "maison": { x: 340, y: 260 },
     "weather": { x: 530, y: 220 },
@@ -615,14 +612,14 @@ const startDrag = (
       title: "Adobe InDesign",
       icon: "/icons/id.png",
       message:
-        "Cleaned up your footage folder? Too bad there's no way to connect all those Photoshop layers and videos!",
+        "Moved your images folder? Perfect. Now 47 links are missing",
     },
 
     photoshop: {
       title: "Adobe Photoshop",
       icon: "/icons/ps.png",
       message:
-        "Congratulations. You merged 87 layers and now nobody can edit anything.",
+        "Congratulations. You merged 87 layers. Hope that backup exists.",
     },
 
     illustrator: {
@@ -671,14 +668,14 @@ const startDrag = (
 <div className="relative z-20 w-full h-full">
   {projects.map((project) => (
     <button
-      key={project.slug}
-      onClick={() => openWindow(project.slug)}
-      className="absolute flex flex-col items-center gap-2"
-      style={{
-        left: project.x,
-        top: project.y,
-      }}
-    >
+  key={project.slug}
+  onClick={() => openWindow(project.slug)}
+  className="absolute flex flex-col items-center gap-2 group cursor-pointer"
+  style={{
+    left: project.x,
+    top: project.y,
+  }}
+>
       <img
         src={project.image}
         alt={project.title}
@@ -693,18 +690,25 @@ const startDrag = (
       />
 
       <span
-        className="
-          text-[11px]
-          font-semibold
-          text-white
-          drop-shadow-lg
-          uppercase
-          tracking-[0.05em]
-          text-center
-        "
-      >
-        {project.title}
-      </span>
+    className="
+    text-[11px]
+    font-semibold
+    text-white
+    drop-shadow-lg
+    uppercase
+    tracking-[0.05em]
+    text-center
+    px-2
+    py-1
+    rounded-[4px]
+    transition-all
+    duration-150
+    group-hover:bg-[#007aff]
+    group-hover:text-white
+  "
+>
+  {project.title}
+</span>
     </button>
   ))}
 </div>
@@ -942,7 +946,7 @@ const startDrag = (
     flex
     items-center
     px-5
-    cursor-move
+    cursor-grab active:cursor-grabbing
   "
 >
   <button
@@ -1124,7 +1128,7 @@ if (window.id === "photos") {
   items-center
   px-3
   gap-2
-  cursor-move
+  cursor-grab active:cursor-grabbing
   select-none
 "
 >
@@ -1241,7 +1245,7 @@ if (window.id === "polimi") {
             items-center
             px-3
             gap-2
-            cursor-move
+            cursor-grab active:cursor-grabbing
           "
         >
           <button
@@ -1366,7 +1370,7 @@ style={{
       items-center
       px-3
       gap-2
-      cursor-move
+      cursor-grab active:cursor-grabbing
     "
   >
     <button
@@ -1526,7 +1530,7 @@ if (window.id === "bin") {
 >
   <div
     onMouseDown={(e) => startDrag(index, e)}
-    className="absolute top-0 left-0 w-full h-8 cursor-move"
+    className="absolute top-0 left-0 w-full h-8 cursor-grab active:cursor-grabbing"
   />
 
   <img
@@ -1828,7 +1832,7 @@ if (window.id === "bin") {
 
       <div className="space-y-1 text-[10px] mb-6">
         {[
-          "Orb Twine — Product Designer & Sustainability Consultant (2025–Present)",
+          "Orb Twine — Brand & Product Designer (2025–Present)",
           "Sebastian Milano — Graphic Designer (2024)",
           "Freelance — Brand Identity, UI/UX & Graphic Designer (2020–Present)",
           "Medivisual — Graphic Designer (2019–2022)",
@@ -1849,9 +1853,9 @@ if (window.id === "bin") {
 
       <div className="space-y-1 text-[10px] mb-6">
         {[
-          "Politecnico di Milano — Premium Design Management (2023–2024)",
-          "Chandigarh University — M.Sc. Animation & Multimedia (2017–2019)",
-          "Howest University, Belgium — Erasmus+ Exchange Programme",
+          "Politecnico di Milano, Italy — Premium Design Management (2023–2024)",
+          "Howest University, Belgium — Erasmus+ Fellowship Programme (2018–2019)",
+          "Chandigarh University, India — M.Sc. Animation & Multimedia (2017–2019)",
         ].map((item, index) => (
           <div key={`${item}-${index}`} className="flex items-center gap-2">
             <span className="w-4 h-4 rounded-full bg-[#f2b32a] text-white flex items-center justify-center text-[8px]">
@@ -1899,7 +1903,9 @@ if (window.id === "bin") {
           "Adobe InDesign",
           "Figma",
           "Shopify",
-          "Microsoft Office",
+          "Next.js",
+          "TypeScript",
+          "GitHub",
         ].map((item, index) => (
           <div key={`${item}-${index}`} className="flex items-center gap-2">
             <span className="w-4 h-4 rounded-full bg-[#f2b32a] text-white flex items-center justify-center text-[8px]">
@@ -1916,9 +1922,9 @@ if (window.id === "bin") {
 
       <div className="space-y-1 text-[10px]">
         {[
-          "English — IELTS 7.5",
+          "Italian — Basic",
+          "English — Fluent",
           "Punjabi — Native",
-          "Hindi — Fluent",
         ].map((item, index) => (
           <div key={`${item}-${index}`} className="flex items-center gap-2">
             <span className="w-4 h-4 rounded-full bg-[#f2b32a] text-white flex items-center justify-center text-[8px]">
@@ -1932,14 +1938,15 @@ if (window.id === "bin") {
   )}
 
   {/* INTERESTS */}
-  {notesTab === "interests" && (
-    <div className="grid grid-cols-2 gap-2">
-      <img src="/interests/1.jpg" alt="" className="rounded-md" />
-      <img src="/interests/2.jpg" alt="" className="rounded-md" />
-      <img src="/interests/3.jpg" alt="" className="rounded-md" />
-      <img src="/interests/4.jpg" alt="" className="rounded-md" />
-    </div>
-  )}
+{notesTab === "interests" && (
+  <div className="flex items-center justify-center px-8 py-0 -translate-x-19 -translate-y-13">
+    <img
+      src="/interests/interests.png"
+      alt="Interests"
+      className="w-full max-w-[500px] h-auto object-contain"
+    />
+  </div>
+)}
 
 </div>
         </div>
