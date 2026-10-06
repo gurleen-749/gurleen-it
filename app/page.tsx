@@ -74,11 +74,11 @@ const projects = [
     slug: "se",
   },
   {
-    title: "Weather",
-    image: "/gallery/weather.jpg",
+    title: "Levde",
+    image: "/gallery/levde.jpg",
     x: "42%",
     y: "15%",
-    slug: "weather",
+    slug: "levde",
   },
   {
     title: "Gyfia",
@@ -428,11 +428,11 @@ const projectData = {
     ],
   },
 
-  weather: {
-    title: "Weather",
+  levde: {
+    title: "Levde",
     subtitle: "Poster Series",
     description: "Long project description goes here.",
-    image: "/gallery/weather.jpg",
+    image: "/gallery/levde.jpg",
 
     details: [
       "Poster Design",
@@ -440,19 +440,15 @@ const projectData = {
       "Print",
     ],
 
-    preview: "/gallery/weather.jpg",
+    preview: "/gallery/levde.jpg",
 
     credits: [
       "Poster Design: Gurleen Kaur",
     ],
 
     gallery: [
-      "/gallery/weather-1.jpg",
-      "/gallery/weather-2.jpg",
-      "/gallery/weather-3.jpg",
-      "/gallery/weather-4.jpg",
-      "/gallery/weather-5.jpg",
-      "/gallery/weather-6.jpg",
+      "/gallery/levde-1.jpg",
+      "/gallery/levde-2.jpg",
     ],
   },
 
@@ -587,7 +583,7 @@ const startDrag = (
     "colab": { x: 650, y: 140 },
     "gret": { x: 420, y: 200 },
     "maison": { x: 340, y: 260 },
-    "weather": { x: 530, y: 220 },
+    "levde": { x: 530, y: 220 },
     "gisele": { x: 670, y: 250 },
     "sspa": { x: 600, y: 110 },
     "gmuseum": { x: 320, y: 150 },
